@@ -274,7 +274,7 @@ Partial Class Form1
         ' 
         dtpTarikh.Location = New Point(110, 213)
         dtpTarikh.Name = "dtpTarikh"
-        dtpTarikh.Size = New Size(409, 27)
+        dtpTarikh.Size = New Size(245, 27)
         dtpTarikh.TabIndex = 13
         ' 
         ' dgvMaklumat
