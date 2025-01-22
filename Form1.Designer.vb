@@ -50,6 +50,9 @@ Partial Class Form1
         BtnRead = New Button()
         BtnUpdate = New Button()
         BtnDelete = New Button()
+        column = New DataGridViewTextBoxColumn()
+        column2 = New DataGridViewTextBoxColumn()
+        Column3 = New DataGridViewTextBoxColumn()
         gbxJantina.SuspendLayout()
         gbxPerisa.SuspendLayout()
         gbxKaedahbayaran.SuspendLayout()
@@ -274,16 +277,17 @@ Partial Class Form1
         ' 
         dtpTarikh.Location = New Point(110, 213)
         dtpTarikh.Name = "dtpTarikh"
-        dtpTarikh.Size = New Size(245, 27)
+        dtpTarikh.Size = New Size(285, 27)
         dtpTarikh.TabIndex = 13
         ' 
         ' dgvMaklumat
         ' 
         dgvMaklumat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvMaklumat.Columns.AddRange(New DataGridViewColumn() {column, column2, Column3})
         dgvMaklumat.Location = New Point(57, 414)
         dgvMaklumat.Name = "dgvMaklumat"
         dgvMaklumat.RowHeadersWidth = 51
-        dgvMaklumat.Size = New Size(436, 82)
+        dgvMaklumat.Size = New Size(426, 82)
         dgvMaklumat.TabIndex = 14
         ' 
         ' BtnCreate
@@ -321,6 +325,27 @@ Partial Class Form1
         BtnDelete.TabIndex = 18
         BtnDelete.Text = "Delete"
         BtnDelete.UseVisualStyleBackColor = True
+        ' 
+        ' column
+        ' 
+        column.HeaderText = "Bil"
+        column.MinimumWidth = 6
+        column.Name = "column"
+        column.Width = 125
+        ' 
+        ' column2
+        ' 
+        column2.HeaderText = "Nama"
+        column2.MinimumWidth = 6
+        column2.Name = "column2"
+        column2.Width = 125
+        ' 
+        ' Column3
+        ' 
+        Column3.HeaderText = "No. Tel"
+        Column3.MinimumWidth = 6
+        Column3.Name = "Column3"
+        Column3.Width = 125
         ' 
         ' Form1
         ' 
@@ -387,5 +412,8 @@ Partial Class Form1
     Friend WithEvents cbxCoklat As CheckBox
     Friend WithEvents cbxKopi As CheckBox
     Friend WithEvents cbxMilo As CheckBox
+    Friend WithEvents column As DataGridViewTextBoxColumn
+    Friend WithEvents column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
 
 End Class
