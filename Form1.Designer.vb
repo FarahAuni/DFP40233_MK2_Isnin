@@ -32,8 +32,8 @@ Partial Class Form1
         txtAlamat = New TextBox()
         cmbNegeri = New ComboBox()
         gbxJantina = New GroupBox()
-        RbtWanita = New RadioButton()
-        RbtLelaki = New RadioButton()
+        rbtWanita = New RadioButton()
+        rbtLelaki = New RadioButton()
         gbxPerisa = New GroupBox()
         cbxPisang = New CheckBox()
         cbxStrawberi = New CheckBox()
@@ -41,8 +41,8 @@ Partial Class Form1
         cbxKopi = New CheckBox()
         cbxMilo = New CheckBox()
         gbxKaedahbayaran = New GroupBox()
-        RbtCashless = New RadioButton()
-        RbtCash = New RadioButton()
+        rbtCashless = New RadioButton()
+        rbtCash = New RadioButton()
         lblTarikh = New Label()
         dtpTarikh = New DateTimePicker()
         dgvMaklumat = New DataGridView()
@@ -50,9 +50,9 @@ Partial Class Form1
         BtnRead = New Button()
         BtnUpdate = New Button()
         BtnDelete = New Button()
-        column = New DataGridViewTextBoxColumn()
-        column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
+        clmBil = New DataGridViewTextBoxColumn()
+        clmNama = New DataGridViewTextBoxColumn()
+        clmNotel = New DataGridViewTextBoxColumn()
         gbxJantina.SuspendLayout()
         gbxPerisa.SuspendLayout()
         gbxKaedahbayaran.SuspendLayout()
@@ -136,8 +136,8 @@ Partial Class Form1
         ' 
         ' gbxJantina
         ' 
-        gbxJantina.Controls.Add(RbtWanita)
-        gbxJantina.Controls.Add(RbtLelaki)
+        gbxJantina.Controls.Add(rbtWanita)
+        gbxJantina.Controls.Add(rbtLelaki)
         gbxJantina.Location = New Point(52, 246)
         gbxJantina.Name = "gbxJantina"
         gbxJantina.Size = New Size(200, 76)
@@ -145,27 +145,27 @@ Partial Class Form1
         gbxJantina.TabStop = False
         gbxJantina.Text = "Jantina"
         ' 
-        ' RbtWanita
+        ' rbtWanita
         ' 
-        RbtWanita.AutoSize = True
-        RbtWanita.Location = New Point(86, 38)
-        RbtWanita.Name = "RbtWanita"
-        RbtWanita.Size = New Size(76, 24)
-        RbtWanita.TabIndex = 1
-        RbtWanita.TabStop = True
-        RbtWanita.Text = "Wanita"
-        RbtWanita.UseVisualStyleBackColor = True
+        rbtWanita.AutoSize = True
+        rbtWanita.Location = New Point(86, 38)
+        rbtWanita.Name = "rbtWanita"
+        rbtWanita.Size = New Size(76, 24)
+        rbtWanita.TabIndex = 1
+        rbtWanita.TabStop = True
+        rbtWanita.Text = "Wanita"
+        rbtWanita.UseVisualStyleBackColor = True
         ' 
-        ' RbtLelaki
+        ' rbtLelaki
         ' 
-        RbtLelaki.AutoSize = True
-        RbtLelaki.Location = New Point(12, 38)
-        RbtLelaki.Name = "RbtLelaki"
-        RbtLelaki.Size = New Size(68, 24)
-        RbtLelaki.TabIndex = 0
-        RbtLelaki.TabStop = True
-        RbtLelaki.Text = "Lelaki"
-        RbtLelaki.UseVisualStyleBackColor = True
+        rbtLelaki.AutoSize = True
+        rbtLelaki.Location = New Point(12, 38)
+        rbtLelaki.Name = "rbtLelaki"
+        rbtLelaki.Size = New Size(68, 24)
+        rbtLelaki.TabIndex = 0
+        rbtLelaki.TabStop = True
+        rbtLelaki.Text = "Lelaki"
+        rbtLelaki.UseVisualStyleBackColor = True
         ' 
         ' gbxPerisa
         ' 
@@ -233,8 +233,8 @@ Partial Class Form1
         ' 
         ' gbxKaedahbayaran
         ' 
-        gbxKaedahbayaran.Controls.Add(RbtCashless)
-        gbxKaedahbayaran.Controls.Add(RbtCash)
+        gbxKaedahbayaran.Controls.Add(rbtCashless)
+        gbxKaedahbayaran.Controls.Add(rbtCash)
         gbxKaedahbayaran.Location = New Point(52, 332)
         gbxKaedahbayaran.Name = "gbxKaedahbayaran"
         gbxKaedahbayaran.Size = New Size(200, 76)
@@ -242,27 +242,27 @@ Partial Class Form1
         gbxKaedahbayaran.TabStop = False
         gbxKaedahbayaran.Text = "Kaedah Bayaran"
         ' 
-        ' RbtCashless
+        ' rbtCashless
         ' 
-        RbtCashless.AutoSize = True
-        RbtCashless.Location = New Point(86, 35)
-        RbtCashless.Name = "RbtCashless"
-        RbtCashless.Size = New Size(85, 24)
-        RbtCashless.TabIndex = 1
-        RbtCashless.TabStop = True
-        RbtCashless.Text = "Cashless"
-        RbtCashless.UseVisualStyleBackColor = True
+        rbtCashless.AutoSize = True
+        rbtCashless.Location = New Point(86, 35)
+        rbtCashless.Name = "rbtCashless"
+        rbtCashless.Size = New Size(85, 24)
+        rbtCashless.TabIndex = 1
+        rbtCashless.TabStop = True
+        rbtCashless.Text = "Cashless"
+        rbtCashless.UseVisualStyleBackColor = True
         ' 
-        ' RbtCash
+        ' rbtCash
         ' 
-        RbtCash.AutoSize = True
-        RbtCash.Location = New Point(12, 35)
-        RbtCash.Name = "RbtCash"
-        RbtCash.Size = New Size(61, 24)
-        RbtCash.TabIndex = 0
-        RbtCash.TabStop = True
-        RbtCash.Text = "Cash"
-        RbtCash.UseVisualStyleBackColor = True
+        rbtCash.AutoSize = True
+        rbtCash.Location = New Point(12, 35)
+        rbtCash.Name = "rbtCash"
+        rbtCash.Size = New Size(61, 24)
+        rbtCash.TabIndex = 0
+        rbtCash.TabStop = True
+        rbtCash.Text = "Cash"
+        rbtCash.UseVisualStyleBackColor = True
         ' 
         ' lblTarikh
         ' 
@@ -283,7 +283,7 @@ Partial Class Form1
         ' dgvMaklumat
         ' 
         dgvMaklumat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvMaklumat.Columns.AddRange(New DataGridViewColumn() {column, column2, Column3})
+        dgvMaklumat.Columns.AddRange(New DataGridViewColumn() {clmBil, clmNama, clmNotel})
         dgvMaklumat.Location = New Point(57, 414)
         dgvMaklumat.Name = "dgvMaklumat"
         dgvMaklumat.RowHeadersWidth = 51
@@ -326,26 +326,26 @@ Partial Class Form1
         BtnDelete.Text = "Delete"
         BtnDelete.UseVisualStyleBackColor = True
         ' 
-        ' column
+        ' clmBil
         ' 
-        column.HeaderText = "Bil"
-        column.MinimumWidth = 6
-        column.Name = "column"
-        column.Width = 125
+        clmBil.HeaderText = "Bil"
+        clmBil.MinimumWidth = 6
+        clmBil.Name = "clmBil"
+        clmBil.Width = 125
         ' 
-        ' column2
+        ' clmNama
         ' 
-        column2.HeaderText = "Nama"
-        column2.MinimumWidth = 6
-        column2.Name = "column2"
-        column2.Width = 125
+        clmNama.HeaderText = "Nama"
+        clmNama.MinimumWidth = 6
+        clmNama.Name = "clmNama"
+        clmNama.Width = 125
         ' 
-        ' Column3
+        ' clmNotel
         ' 
-        Column3.HeaderText = "No. Tel"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.Width = 125
+        clmNotel.HeaderText = "No. Tel"
+        clmNotel.MinimumWidth = 6
+        clmNotel.Name = "clmNotel"
+        clmNotel.Width = 125
         ' 
         ' Form1
         ' 
@@ -394,12 +394,12 @@ Partial Class Form1
     Friend WithEvents txtAlamat As TextBox
     Friend WithEvents cmbNegeri As ComboBox
     Friend WithEvents gbxJantina As GroupBox
-    Friend WithEvents RbtWanita As RadioButton
-    Friend WithEvents RbtLelaki As RadioButton
+    Friend WithEvents rbtWanita As RadioButton
+    Friend WithEvents rbtLelaki As RadioButton
     Friend WithEvents gbxPerisa As GroupBox
     Friend WithEvents gbxKaedahbayaran As GroupBox
-    Friend WithEvents RbtCashless As RadioButton
-    Friend WithEvents RbtCash As RadioButton
+    Friend WithEvents rbtCashless As RadioButton
+    Friend WithEvents rbtCash As RadioButton
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dtpTarikh As DateTimePicker
     Friend WithEvents dgvMaklumat As DataGridView
@@ -412,8 +412,8 @@ Partial Class Form1
     Friend WithEvents cbxCoklat As CheckBox
     Friend WithEvents cbxKopi As CheckBox
     Friend WithEvents cbxMilo As CheckBox
-    Friend WithEvents column As DataGridViewTextBoxColumn
-    Friend WithEvents column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents clmBil As DataGridViewTextBoxColumn
+    Friend WithEvents clmNama As DataGridViewTextBoxColumn
+    Friend WithEvents clmNotel As DataGridViewTextBoxColumn
 
 End Class
