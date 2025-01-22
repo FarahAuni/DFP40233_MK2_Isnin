@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        lblMaklumatPelanggan = New Label()
+        lblMaklumatpelanggan = New Label()
         lblNama = New Label()
         lblNotel = New Label()
         lblAlamat = New Label()
@@ -56,14 +56,14 @@ Partial Class Form1
         CType(dgvMaklumat, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' lblMaklumatPelanggan
+        ' lblMaklumatpelanggan
         ' 
-        lblMaklumatPelanggan.AutoSize = True
-        lblMaklumatPelanggan.Location = New Point(12, 9)
-        lblMaklumatPelanggan.Name = "lblMaklumatPelanggan"
-        lblMaklumatPelanggan.Size = New Size(177, 20)
-        lblMaklumatPelanggan.TabIndex = 0
-        lblMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
+        lblMaklumatpelanggan.AutoSize = True
+        lblMaklumatpelanggan.Location = New Point(12, 9)
+        lblMaklumatpelanggan.Name = "lblMaklumatpelanggan"
+        lblMaklumatpelanggan.Size = New Size(177, 20)
+        lblMaklumatpelanggan.TabIndex = 0
+        lblMaklumatpelanggan.Text = "MAKLUMAT PELANGGAN"
         ' 
         ' lblNama
         ' 
@@ -345,7 +345,7 @@ Partial Class Form1
         Controls.Add(lblAlamat)
         Controls.Add(lblNotel)
         Controls.Add(lblNama)
-        Controls.Add(lblMaklumatPelanggan)
+        Controls.Add(lblMaklumatpelanggan)
         Name = "Form1"
         Text = "MAKLUMAT PELANGGAN"
         gbxJantina.ResumeLayout(False)
@@ -359,7 +359,7 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents lblMaklumatPelanggan As Label
+    Friend WithEvents lblMaklumatpelanggan As Label
     Friend WithEvents lblNama As Label
     Friend WithEvents lblNotel As Label
     Friend WithEvents lblAlamat As Label
